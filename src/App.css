@@ -36,10 +36,11 @@ aside img {
   width: 170px;
   height: 170px;
   object-fit: cover;
+  margin: auto;
 }
-svg {
+aside svg {
   font-size: 25px;
-  color: gold;
+  color: rgb(255, 242, 0);
 }
 .inforSection {
   border-radius: 25px;
@@ -55,7 +56,7 @@ svg {
   padding: 2rem;
   position: relative;
 }
-nav{
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,17 +69,76 @@ nav{
   padding: 1rem;
   border-end-start-radius: 20px;
 }
-nav a{
-  font-size: 20PX;
+nav a {
+  font-size: 20px;
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
-nav a:hover{
+nav a:hover {
   color: aquamarine;
 }
-.inforSection h1{
-font-size: 30px;
-font-weight: 600;
-margin-bottom: 2rem;
-color: white;
+.inforSection h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: white;
+}
+.socials svg {
+  color: rgb(219, 219, 219);
+  font-size: 30px;
+}
+.socials svg:hover {
+  color: rgb(75, 0, 146);
+}
+.aboutbtm {
+  overflow: hidden;
+}
+.languagesIcons {
+  display: flex;
+  animation: slide 15s linear infinite;
+  gap: 2rem;
+  scroll-behavior: smooth;
+  /* background-color: rgb(196, 128, 2); */
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  55% {
+    transform: translateX(calc(-1 * 55%));
+  }
+}
+.languagesIcons img {
+  width: 180px;
+  mix-blend-mode: difference;
+  height: 180px;
+  /* border-radius: 50%; */
+  object-fit: cover;
+}
+.languagesIcons img:hover {
+  filter: drop-shadow(0 0 10px rgb(255, 255, 255))
+    drop-shadow(0 0 20px rgb(255, 255, 255))
+    drop-shadow(0 0 30px rgb(255, 255, 255));
+}
+.languagesIcons:hover {
+  animation-play-state: paused;
+}
+hr {
+  border: 3px solid rgb(116, 192, 2);
+  border-radius: 5px;
+}
+.barAnime {
+  animation: incrW 4s linear 4s normal forwards  2;
+}
+@keyframes incrW {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }

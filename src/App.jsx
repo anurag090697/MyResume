@@ -17,10 +17,10 @@ function App() {
       <div className="inforSection">
         <Navbar />
         <About />
-        <Certificates />
+        {/* <Certificates />
         <Projects />
         <Moresection />
-        <Contact/>
+        <Contact/> */}
       </div>
     </div>
   );
