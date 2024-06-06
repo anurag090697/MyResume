@@ -186,7 +186,7 @@ function About() {
         <h2 className='text-center my-4 text-3xl font-black text-green-700'>
           Languages
         </h2>
-        <div className="flex justify-around gap-4">
+        <div className='flex justify-around gap-4'>
           <div>
             <h3 className='text-center my-4 text-2xl font-black text-green-700'>
               Coding Languages
@@ -217,9 +217,7 @@ function About() {
               </div>
             </div>
             <div>
-              <h4 className='font-bold text-2xl text-indigo-700 my-3'>
-                CSS
-              </h4>
+              <h4 className='font-bold text-2xl text-indigo-700 my-3'>CSS</h4>
               <div className='w-full bg-gray-600 h-2 rounded-xl flex'>
                 <div className='bg-green-400 max-w-1/3 h-full rounded-s-xl barAnime'></div>
                 <div className='w-2/3'></div>
@@ -231,12 +229,9 @@ function About() {
               Human Languages
             </h3>
             <div>
-              <h4 className='font-bold text-2xl text-indigo-700 my-3'>
-                Hindi
-              </h4>
+              <h4 className='font-bold text-2xl text-indigo-700 my-3'>Hindi</h4>
               <div className='w-full bg-gray-600 h-2 rounded-xl flex items-center'>
                 <div className='bg-green-400 w-full h-full rounded-xl barAnime'></div>
-                
               </div>
             </div>
             <div>

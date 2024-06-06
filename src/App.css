@@ -132,7 +132,7 @@ hr {
   border-radius: 5px;
 }
 .barAnime {
-  animation: incrW 4s linear 4s normal forwards  2;
+  animation: incrW 4s linear 4s normal forwards 2;
 }
 @keyframes incrW {
   0% {
