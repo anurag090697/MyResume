@@ -42,36 +42,47 @@ function About() {
   return (
     <div>
       <h1>About Me</h1>
-      <div className='flex items-center justify-center flex-col text-emerald-800 border-2 border-yellow-500 bg-yellow-400 p-4 rounded-xl shadow-2xl '>
+      <div className='flex items-center justify-center flex-col text-gray-100 border-2 border-blue-500 bg-sky-400 p-4 rounded-xl shadow-2xl '>
         <p>
-          Hello there! 👋 My name is Anurag and I'm from Satna, India. As a
-          Full-Stack software developer, I specialize in creating visually
-          appealing websites, apps and mobile games. My passion for graphic
-          design isn't just a hobby, it's a key ingredient in every project I
-          work on.
+          Hello there! 👋 My name is Anurag and I'm from Satna, India. As an
+          aspiring Full-Stack Web developer, I specialize in creating visually
+          appealing websites. My passion for graphic design isn't just a hobby,
+          it's a key ingredient in every project I work on.
           <span className='hidden' id='extra'>
-            Growing up bilingual, I developed a love for languages and I
-            currently speak four of them fluently. I believe that this skill has
-            given me a unique perspective and allows me to communicate
-            effectively with clients from all over the world. One of my
-            strengths is adding a personal touch to my projects by adding the
-            client's identity and message into the design, creating meaningful
-            and beautiful end products that are both eye-catching and
-            user-friendly. In my free time, I enjoy exploring my other passions,
-            such as photography and music production, which provide me with
-            creative outlets. I am also very passionate about Web3 and
-            everything related to crypto, NFTs and blockchain technology as I
-            believe they have the potential to revolutionize business and online
-            interactions. If you have an innovative idea for a project that
-            needs to be developed, I would love to hear from you. Your vision
-            can be turned into a real product. Don't hesitate to reach out and
-            let's start a conversation about your concept. I'm excited to
-            collaborate and help bring your ideas to life.
+            As a versatile professional with a unique blend of experience in
+            agriculture, waste management, entrepreneurship, and web
+            development, I bring a multifaceted approach to problem-solving and
+            project management. My educational background in BSc Agriculture,
+            coupled with practical experience as a branch head in municipal
+            waste recycling, has instilled in me a strong sense of environmental
+            responsibility and project oversight. This experience in turning
+            organic waste into marketable compost demonstrates my ability to
+            manage complex processes and see projects through from concept to
+            completion. My entrepreneurial journey, including running an
+            agricultural irrigation equipment business and a construction
+            company, has honed my skills in client relations, project
+            management, and adaptability. These experiences have taught me
+            valuable lessons in teamwork, leadership, and delivering results
+            under pressure. Currently, I'm focusing on web development, with
+            proficiency in HTML, CSS, Tailwind, React, JavaScript, and
+            intermediate data structures and algorithms using Java. I'm
+            particularly interested in creating responsive and user-friendly
+            blog-style interfaces. Fluent in Hindi and English, I can
+            effectively communicate with diverse teams and clients. In my free
+            time, I manage anime-focused social media pages, enjoy online
+            gaming, and value time with family and pets. My unique background
+            allows me to approach web development projects with a fresh
+            perspective, combining technical skills with practical business
+            acumen. I'm excited to bring this diverse experience to innovative
+            web projects, especially those involving content-driven platforms or
+            requiring a blend of technical and business insights.
           </span>
         </p>
         <button
           onClick={() => showExtra()}
-          className='text-center animate-bounce my-4 text-gray-600'
+          className={`text-center animate-bounce my-4  ${
+            showMore === "Show More" ? "text-sky-800" : "text-red-600"
+          }`}
         >
           {arrow} {"  "}
           {showMore} {"  "}
@@ -79,17 +90,17 @@ function About() {
         </button>
       </div>
       <div>
-        <h2 className='text-center my-4 text-3xl font-black text-green-700'>
+        <h2 className='text-center my-4 text-3xl font-black text-white'>
           Primary Focus
         </h2>
-        <div className='flex justify-around align-center font-bold text-green-500 gap-6 flex-wrap my-6'>
-          <div className='w-5/12 flex gap-4 bg-yellow-300 p-6 rounded-2xl border-2 border-yellow-500 shadow-2xl'>
+        <div className='flex justify-around align-center font-bold text-cyan-800 gap-6 flex-wrap my-6'>
+          <div className='w-5/12 flex gap-4 bg-cyan-400 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
             <FontAwesomeIcon
               icon='fa-solid fa-globe'
               className='text-4xl text-blue-500 mx-1'
             />
             <div>
-              <h3 className='text-2xl text-green-700 mb-1'>
+              <h3 className='text-2xl text-white mb-1'>
                 Web Design & Development
               </h3>
               <p>
@@ -98,13 +109,13 @@ function About() {
               </p>
             </div>
           </div>
-          <div className='w-5/12 flex gap-4 bg-yellow-300 p-6 rounded-2xl border-2 border-yellow-500 shadow-2xl'>
+          <div className='w-5/12 flex gap-4 bg-cyan-400 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
             <FontAwesomeIcon
               icon='fa-solid fa-file-circle-check'
               className='text-4xl text-blue-500 mx-1'
             />
             <div>
-              <h3 className='text-2xl text-green-700 mb-1'>
+              <h3 className='text-2xl text-white mb-1'>
                 Full-Stack Solutions
               </h3>
               <p>
@@ -113,13 +124,13 @@ function About() {
               </p>
             </div>
           </div>
-          <div className='w-5/12 flex gap-4 bg-yellow-300 p-6 rounded-2xl border-2 border-yellow-500 shadow-2xl'>
+          <div className='w-5/12 flex gap-4 bg-cyan-400 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
             <FontAwesomeIcon
               icon='fa-solid fa-mobile'
               className='text-4xl text-blue-500 mx-1'
             />
             <div>
-              <h3 className='text-2xl text-green-700 mb-1'>
+              <h3 className='text-2xl text-white mb-1'>
                 Responsive Web Design
               </h3>
               <p>
@@ -128,13 +139,13 @@ function About() {
               </p>
             </div>
           </div>
-          <div className='w-5/12 flex gap-4 bg-yellow-300 p-6 rounded-2xl border-2 border-yellow-500 shadow-2xl'>
+          <div className='w-5/12 flex gap-4 bg-cyan-400 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
             <FontAwesomeIcon
               icon='fa-solid fa-money-bill-trend-up'
               className='text-4xl text-blue-500 mx-1'
             />
             <div>
-              <h3 className='text-2xl text-green-700 mb-1'>Marketing & SEO</h3>
+              <h3 className='text-2xl text-white mb-1'>Marketing & SEO</h3>
               <p>
                 Using SEO and marketing strategies to boost online visibility
                 and promote products or services.
@@ -144,17 +155,17 @@ function About() {
         </div>
       </div>
       <div>
-        <h3 className='text-center my-4 text-3xl font-black text-green-700'>
+        <h3 className='text-center my-4 text-3xl font-black text-white'>
           Exploring Creativity
         </h3>
         <div className='flex justify-around align-center font-bold text-green-500 gap-6 flex-wrap my-6'>
-          <div className='w-5/12 flex gap-4 bg-yellow-300 p-5 rounded-2xl border-2 border-yellow-500 shadow-2xl'>
+          <div className='w-5/12 flex gap-4 bg-cyan-400 p-5 rounded-2xl border-2 border-green-500 shadow-2xl'>
             <FontAwesomeIcon
               icon='fa-solid fa-icons'
               className='text-4xl text-blue-500 mx-1'
             />
             <div>
-              <h4 className='text-2xl text-green-700 mb-1'>
+              <h4 className='text-2xl text-white mb-1'>
                 Visual Storytelling
               </h4>
               <p>
@@ -163,14 +174,14 @@ function About() {
               </p>
             </div>
           </div>
-          <div className='w-5/12 flex gap-4 bg-yellow-300 p-5 shadow-2xl rounded-2xl border-2 border-yellow-500'>
+          <div className='w-5/12 flex gap-4 bg-cyan-400 p-5 shadow-2xl rounded-2xl border-2 border-green-500'>
             <FontAwesomeIcon
               icon='fa-solid fa-camera-retro'
               className='text-4xl text-blue-500 mx-1'
             />
 
             <div>
-              <h4 className='text-2xl text-green-700 mb-1'>
+              <h4 className='text-2xl text-white mb-1'>
                 Digital Content Creation
               </h4>
               <p>
@@ -182,13 +193,13 @@ function About() {
         </div>
       </div>
 
-      <div className=' bg-yellow-300 p-6 rounded-2xl border-2 border-yellow-500 shadow-2xl pb-14'>
-        <h2 className='text-center my-4 text-3xl font-black text-green-700'>
+      <div className=' bg-cyan-400 p-6 rounded-2xl border-2 border-green-500 shadow-2xl pb-14'>
+        <h2 className='text-center my-4 text-3xl font-black text-white'>
           Languages
         </h2>
         <div className='flex justify-around gap-4'>
           <div>
-            <h3 className='text-center my-4 text-2xl font-black text-green-700'>
+            <h3 className='text-center my-4 text-2xl font-black text-white'>
               Coding Languages
             </h3>
             <div>
@@ -225,7 +236,7 @@ function About() {
             </div>
           </div>
           <div>
-            <h3 className='text-center my-4 text-2xl font-black text-green-700'>
+            <h3 className='text-center my-4 text-2xl font-black text-white'>
               Human Languages
             </h3>
             <div>
@@ -247,10 +258,11 @@ function About() {
         </div>
       </div>
       <div className='aboutbtm my-6'>
-        <h3 className='text-center my-4 text-3xl font-black text-green-700'>
+        <h3 className='text-center my-4 text-3xl font-black text-gray-100'>
           Development Skills
         </h3>
         <div className='languagesIcons'>
+          
           <img src='https://oktayshakirov.com/assets/images/html.png' alt='' />
           <img src='https://oktayshakirov.com/assets/images/css.png' alt='' />
           <img
@@ -264,9 +276,12 @@ function About() {
           />
           <img src='https://oktayshakirov.com/assets/images/npm.png' alt='' />
           <img
+            
             src='https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png'
             alt=''
           />
+          <img src='https://oktayshakirov.com/assets/images/git.png' alt='' />
+          <img src='https://oktayshakirov.com/assets/images/node.png' alt='' />
         </div>
       </div>
     </div>

@@ -7,75 +7,46 @@
   font-family: "Quantico", sans-serif;
   font-style: normal;
 }
-.container {
-  background: rgb(166, 233, 178);
-  background: linear-gradient(
-    180deg,
-    rgba(166, 233, 178, 1) 22%,
-    rgba(92, 184, 144, 1) 73%
-  );
-  position: relative;
-  /* padding: 2rem; */
+
+.anime-bg{
+  background: linear-gradient(55deg,deepskyblue,darkviolet,blue,#a4e132,#32e1b8);
+  background-size: 300% 300%;
+  animation: gradient-animation 5s ease infinite;
 }
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+    
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 aside {
   position: fixed;
   left: 4rem;
   top: 4rem;
-  background: rgb(255, 93, 93);
-  background: linear-gradient(
-    49deg,
-    rgba(255, 93, 93, 1) 17%,
-    rgba(255, 209, 149, 1) 51%,
-    rgba(255, 139, 94, 1) 85%
-  );
+
   padding: 1.5rem 2.5rem;
-  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(48, 48, 48, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-aside img {
-  border-radius: 25px;
-  width: 170px;
-  height: 170px;
-  object-fit: cover;
-  margin: auto;
-}
-aside svg {
-  font-size: 25px;
-  color: rgb(255, 242, 0);
-}
+
 .inforSection {
-  border-radius: 25px;
-  background: rgb(236, 170, 63);
-  background: radial-gradient(
-    circle,
-    rgba(236, 170, 63, 1) 16%,
-    rgba(219, 206, 48, 1) 56%,
-    rgba(241, 233, 145, 1) 79%
-  );
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(48, 48, 48, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   margin: 1.5rem;
   margin-left: 30%;
-  padding: 2rem;
+  
   position: relative;
-}
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background-color: coral;
-  width: fit-content;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 1rem;
-  border-end-start-radius: 20px;
-}
-nav a {
-  font-size: 20px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-}
-nav a:hover {
-  color: aquamarine;
 }
 .inforSection h1 {
   font-size: 30px;
@@ -83,22 +54,17 @@ nav a:hover {
   margin-bottom: 2rem;
   color: white;
 }
-.socials svg {
-  color: rgb(219, 219, 219);
-  font-size: 30px;
-}
-.socials svg:hover {
-  color: rgb(75, 0, 146);
-}
+
 .aboutbtm {
   overflow: hidden;
 }
+
 .languagesIcons {
   display: flex;
   animation: slide 15s linear infinite;
   gap: 2rem;
   scroll-behavior: smooth;
-  /* background-color: rgb(196, 128, 2); */
+  
   width: fit-content;
   padding: 1rem;
   border-radius: 12px;
@@ -109,7 +75,7 @@ nav a:hover {
     transform: translateX(0);
   }
   55% {
-    transform: translateX(calc(-1 * 55%));
+    transform: translateX(calc(-1 * 100%));
   }
 }
 .languagesIcons img {
