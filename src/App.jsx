@@ -22,7 +22,7 @@ function MainContent() {
   };
 
   return (
-    <div className='inforSection rounded-3xl bg-gradient-to-br from-cyan-600 to-cyan-800 p-8 '>
+    <div className='inforSection rounded-3xl bg-gradient-to-br xl:w-2/3 mr-8 xl:place-self-end from-cyan-600 to-cyan-800 p-8 relative'>
       <Navbar />
       <Routes>
         <Route path='/' element={<About />} />
@@ -46,7 +46,7 @@ function MainContent() {
 function App() {
   return (
     <BrowserRouter>
-      <div className='container min-h-dvh p-8 relative bg-gradient-to-br from-indigo-900 via-sky-800 to-cyan-900 min-w-full'>
+      <div className='container xl:block flex flex-col gap-6 items-start justify-start min-h-dvh p-8 pb-20 relative bg-gradient-to-br from-indigo-900 via-sky-800 to-cyan-900 min-w-full'>
         <Sidebar />
         <MainContent />
       </div>

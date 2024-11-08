@@ -14,7 +14,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import dp from "../public/dp.webp";
+import dp from "../public/dp.jpg";
 library.add(
   faHourglassStart,
   faLocationDot,
@@ -27,19 +27,20 @@ library.add(
 
 function Sidebar() {
   return (
-    <aside className='text-lime-300 font-medium rounded-xl bg-gradient-to-br from-sky-800 via-slate-400 to-sky-700'>
+    <aside className='text-lime-300 w-full md:w-2/3 md:place-self-center xl:w-fit xl:fixed left-16 top-16 py-6 px-8 font-medium shadow-xl shadow-slate-950 rounded-xl bg-gradient-to-br from-sky-800 via-slate-400 to-sky-700'>
       <img
-        className='max-w-40 h-40 rounded-xl mx-auto object-cover'
+        className='w-40 h-40 rounded-xl mx-auto object-cover'
         src={dp}
         alt='Profile'
       />
       <h2 className='font-black my-3 text-center text-2xl text-lime-400'>
         Anurag Shukla
       </h2>
-      <div className='p-2 relative border-gray-500 overflow-hidden rounded-xl mb-4 text-gray-100 '>
-        {/* <div className='absolute w-full h-full top-0 right-0 anime-bg -z-10 '></div> */}
-        <p className="z-30 text-center w-full">Hello, World!</p>
-      </div>
+
+      <p className='animetext p-2 border-slate-500 border-2 rounded-xl mb-4 shadow-2xl shadow-blue-100 text-amber-200'>
+        Hello, World!
+      </p>
+
       <hr className='border-lime-700' />
       <div className='flex justify-start items-center gap-6 my-4 shadow-md shadow-slate-600 border border-green-400 rounded-xl px-3'>
         <div className='text-gray-500 text-3xl'>

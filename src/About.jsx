@@ -94,7 +94,7 @@ function About() {
           Primary Focus
         </h2>
         <div className='flex justify-around align-center font-bold text-cyan-800 gap-6 flex-wrap my-6'>
-          <div className='w-5/12 flex gap-4 bg-cyan-400 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
+          <div className=' md:w-5/12 flex gap-4 bg-cyan-400 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
             <FontAwesomeIcon
               icon='fa-solid fa-globe'
               className='text-4xl text-blue-500 mx-1'
@@ -109,7 +109,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className='w-5/12 flex gap-4 bg-cyan-400 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
+          <div className='md:w-5/12 flex gap-4 bg-cyan-400 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
             <FontAwesomeIcon
               icon='fa-solid fa-file-circle-check'
               className='text-4xl text-blue-500 mx-1'
@@ -124,7 +124,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className='w-5/12 flex gap-4 bg-cyan-400 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
+          <div className='md:w-5/12 flex gap-4 bg-cyan-400 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
             <FontAwesomeIcon
               icon='fa-solid fa-mobile'
               className='text-4xl text-blue-500 mx-1'
@@ -139,7 +139,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className='w-5/12 flex gap-4 bg-cyan-400 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
+          <div className='md:w-5/12 flex gap-4 bg-cyan-400 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
             <FontAwesomeIcon
               icon='fa-solid fa-money-bill-trend-up'
               className='text-4xl text-blue-500 mx-1'
@@ -159,7 +159,7 @@ function About() {
           Exploring Creativity
         </h3>
         <div className='flex justify-around align-center font-bold text-green-500 gap-6 flex-wrap my-6'>
-          <div className='w-5/12 flex gap-4 bg-cyan-400 p-5 rounded-2xl border-2 border-green-500 shadow-2xl'>
+          <div className='md:w-5/12 flex gap-4 bg-cyan-400 p-5 rounded-2xl border-2 border-green-500 shadow-2xl'>
             <FontAwesomeIcon
               icon='fa-solid fa-icons'
               className='text-4xl text-blue-500 mx-1'
@@ -174,7 +174,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className='w-5/12 flex gap-4 bg-cyan-400 p-5 shadow-2xl rounded-2xl border-2 border-green-500'>
+          <div className='md:w-5/12 flex gap-4 bg-cyan-400 p-5 shadow-2xl rounded-2xl border-2 border-green-500'>
             <FontAwesomeIcon
               icon='fa-solid fa-camera-retro'
               className='text-4xl text-blue-500 mx-1'

@@ -3,14 +3,14 @@ import { NavLink, Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className='bg-sky-600 shadow-md shadow-sky-950 flex justify-center items-center gap-4 w-fit absolute right-0 top-0 p-4 text-white font-black text-xl rounded-es-3xl'>
+    <nav className='bg-sky-600 shadow-md w-full z-50 shadow-sky-950 flex justify-center items-center sm:gap-4 lg:w-fit fixed bottom-0 lg:absolute right-0 lg:top-0 lg:bottom-auto p-4 text-white font-black sm:text-xl lg:rounded-es-3xl'>
       <NavLink
         to='/'
         className={({ isActive, isPending }) =>
           isPending ? "" : isActive ? "text-lime-400" : "hover:text-lime-400"
         }
       >
-        About |{" "}
+        About |
       </NavLink>
       <NavLink
         to='/certificates'
@@ -18,7 +18,7 @@ function Navbar() {
           isPending ? "" : isActive ? "text-lime-400" : "hover:text-lime-400"
         }
       >
-        Certificates |{" "}
+        Certificates |
       </NavLink>
       <NavLink
         to='/projects'
@@ -26,7 +26,7 @@ function Navbar() {
           isPending ? "" : isActive ? "text-lime-400" : "hover:text-lime-400"
         }
       >
-        Projects |{" "}
+        Projects |
       </NavLink>
       <NavLink
         to='/more'
@@ -34,7 +34,7 @@ function Navbar() {
           isPending ? "" : isActive ? "text-lime-400" : "hover:text-lime-400"
         }
       >
-        More |{" "}
+        More |
       </NavLink>
       <NavLink
         to='/contact'
@@ -42,7 +42,7 @@ function Navbar() {
           isPending ? "" : isActive ? "text-lime-400" : "hover:text-lime-400"
         }
       >
-        Contact |{" "}
+        Contact |
       </NavLink>
     </nav>
   );
