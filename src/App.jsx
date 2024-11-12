@@ -22,7 +22,7 @@ function MainContent() {
   };
 
   return (
-    <div className='inforSection rounded-3xl bg-gradient-to-br xl:w-2/3 mr-8 xl:place-self-end from-cyan-600 to-cyan-800 p-8 relative'>
+    <div className='inforSection rounded-3xl bg-gradient-to-br xl:w-2/3 w-full mr-8 xl:place-self-end from-cyan-600 to-cyan-800 p-8 relative'>
       <Navbar />
       <Routes>
         <Route path='/' element={<About />} />

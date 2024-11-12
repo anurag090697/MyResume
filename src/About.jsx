@@ -197,7 +197,7 @@ function About() {
         <h2 className='text-center my-4 text-3xl font-black text-white'>
           Languages
         </h2>
-        <div className='flex justify-around gap-4'>
+        <div className='flex justify-around gap-4 flex-wrap'>
           <div>
             <h3 className='text-center my-4 text-2xl font-black text-white'>
               Coding Languages

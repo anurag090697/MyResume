@@ -17,14 +17,14 @@ function Contact() {
   return (
     <div className='contact text-medium flex flex-col gap-6 items-center justify-center'>
       <h1 className='self-start ml-4 mt-3'>Contact:</h1>
-      <div className='text-center mx-auto text-2xl text-gray-600 w-2/3 bg-green-300/30 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
-        <h2 className="text-3xl text-gray-100">Email:</h2>
-        <div className='flex items-center justify-center gap-3 mt-2'>
+      <div className='text-center mx-auto md:text-2xl text-gray-600 w-full md:w-2/3 bg-green-300/30 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
+        <h2 className='text-3xl text-gray-100'>Email:</h2>
+        <div className='flex flex-wrap items-center justify-center gap-3 lg:mt-2'>
           {" "}
-          <p>anurag090697@gmail.com</p>
+          <p className='text-wrap'>anurag090697@gmail.com</p>
           <button
             id='copybtn'
-            className='text-amber-100 bg-rose-500 p-1 rounded-lg w-28'
+            className='text-amber-100 bg-rose-500 p-1 rounded-lg w-28 hover:bg-amber-200 border-2 border-rose-500 hover:text-rose-500'
             onClick={() => copyit()}
           >
             {copybtn}
@@ -32,22 +32,22 @@ function Contact() {
         </div>
       </div>
       <div className='text-center mx-auto text-3xl text-gray-100  bg-green-300/30 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
-        <h2 >Socials:</h2>
+        <h2>Socials:</h2>
         <div className='flex w-full items-center justify-center gap-6 mt-2'>
           <a href='https://github.com/anurag090697' target='blank'>
-            <img src={githubl} alt='GitHub' className="w-28" />
+            <img src={githubl} alt='GitHub' className='w-28' />
           </a>
           <a
             href='https://www.linkedin.com/in/anurag-shukla-31b70421b/'
             target='blank'
           >
-            <img src={linkedinl} alt='Linkedin' className="w-28"/>
+            <img src={linkedinl} alt='Linkedin' className='w-28' />
           </a>
           <a href='https://www.instagram.com/im__niks/' target='blank'>
-            <img src={instal} alt='Instagram' className="w-28" />
+            <img src={instal} alt='Instagram' className='w-28' />
           </a>
           <a href='https://www.facebook.com/cool.niks213' target='blank'>
-            <img src={fblogo} alt='Facebook' className="w-28" />
+            <img src={fblogo} alt='Facebook' className='w-28' />
           </a>
         </div>
       </div>
