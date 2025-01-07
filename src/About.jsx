@@ -41,7 +41,7 @@ function About() {
   }
   return (
     <div>
-      <h1>About Me</h1>
+      <h1 className="text-center sm:text-start">About Me</h1>
       <div className='flex items-center justify-center flex-col text-gray-100 border-2 border-blue-500 bg-sky-400 p-4 rounded-xl shadow-2xl '>
         <p>
           Hello there! 👋 My name is Anurag and I'm from Satna, India. As an
@@ -97,7 +97,7 @@ function About() {
           <div className=' md:w-5/12 flex gap-4 bg-cyan-400 p-6 rounded-2xl border-2 border-green-500 shadow-2xl'>
             <FontAwesomeIcon
               icon='fa-solid fa-globe'
-              className='text-4xl text-blue-500 mx-1'
+              className='sm:text-4xl text-blue-500 mx-1'
             />
             <div>
               <h3 className='text-2xl text-white mb-1'>
@@ -158,7 +158,7 @@ function About() {
         <h3 className='text-center my-4 text-3xl font-black text-white'>
           Exploring Creativity
         </h3>
-        <div className='flex justify-around align-center font-bold text-green-500 gap-6 flex-wrap my-6'>
+        <div className='flex justify-around align-center font-bold text-blue-900 gap-6 flex-wrap my-6'>
           <div className='md:w-5/12 flex gap-4 bg-cyan-400 p-5 rounded-2xl border-2 border-green-500 shadow-2xl'>
             <FontAwesomeIcon
               icon='fa-solid fa-icons'

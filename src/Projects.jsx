@@ -14,7 +14,7 @@ import { FaGithubAlt } from "react-icons/fa";
 function Projects() {
   return (
     <div className='projects'>
-      <h1>My Projects : </h1>
+      <h1 className="text-center sm:text-start">My Projects : </h1>
 
       <div className='flex flex-wrap items-center justify-center gap-4'>
         <div className='w-72 flex flex-col items-center justify-between gap-3 '>

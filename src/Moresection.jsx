@@ -5,7 +5,7 @@ import omniverse from "../public/omni.jpg";
 function Moresection() {
   return (
     <div className='morediv'>
-      <h1>More Projects</h1>
+      <h1 className="text-center sm:text-start">More Projects</h1>
       <div className='flex flex-wrap items-start justify-evenly gap-4'>
         <div className='w-72 flex flex-col items-center justify-between gap-3 bg-indigo-950/40 p-3 rounded-xl'>
           <img src={extension} alt='' className='rounded-lg' />
